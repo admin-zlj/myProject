@@ -13,6 +13,10 @@ function promiseTimeout(promise, time) {
 
   return Promise.race([promise, timePro]);
 }
+
+
+
+
 // ----test ----
 const t = new Promise((resolve, reject) => {
   setTimeout(function () {
