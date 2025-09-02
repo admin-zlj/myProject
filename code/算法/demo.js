@@ -7,6 +7,7 @@ const rl = readline.createInterface({
 rl.on("line", (line) => {
 	console.log(getResult(line));
 });
+
 function getResult(s) {
 	let isNegative = false;
 	const negative = [];

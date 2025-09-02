@@ -24,9 +24,3 @@ obj.a(); //OBj
 obj.b(); //GLOBAL
 new obj.a();   // undefined
 new obj.b(); //报错
-
-/** 
-请输出下列二进制编码
-10的原码和反码分别是什么
-00001010    01110101 
-**/

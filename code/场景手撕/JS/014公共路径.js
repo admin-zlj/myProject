@@ -9,10 +9,12 @@ function findDir(dirs) {
     const s = dirsArr[0][i];
     if (dirsArr.every((item) => item[i] === s)) {
       res.push(s);
+    } else {
+      break;
     }
   }
 
   return res.length ? res.join('/') : null;
 }
 
-console.log('first', findDir(['/usr/config/bin', '/usr/config', '/usr/config/qq']));
+console.log('====', findDir(['/usr/config/bin', '/usr/config', '/usr/config/qq']));
