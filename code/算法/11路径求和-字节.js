@@ -9,11 +9,10 @@
  * @param {*} targetSum 
  */
 var hasPathSum = function (root, targetSum) {
-	if (root === null) return false;
-	const _t = targetSum - root.val;
-	if (!root.left && !root.right) {
-	  return _t === 0;
-	}
-	return hasPathSum(root.left, _t) || hasPathSum(root.right, _t);
-  };
-  
+  if (root === null) return false;
+  const _t = targetSum - root.val;
+  if (!root.left && !root.right) {
+    return _t === 0;
+  }
+  return hasPathSum(root.left, _t) || hasPathSum(root.right, _t);
+};
