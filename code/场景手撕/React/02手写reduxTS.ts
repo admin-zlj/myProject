@@ -31,7 +31,13 @@ class MyCreatStore<S> {
 }
 
 const pre: {} = {};
-const reducer = (pre: {}, action: { type: string; payload?: any }) => pre;
+const reducer = (pre: {}, action: { type: string; payload?: any }) => {
+  switch (action.type) {
+    default:
+      return pre;
+  }
+};
+
 let s = new MyCreatStore(reducer, pre);
 let dis = s.subscibe(() => {
   console.log('111', 111);

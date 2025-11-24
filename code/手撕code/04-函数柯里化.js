@@ -43,7 +43,7 @@ function count(...args) {
 }
 const count2 =
   (...x) =>
-  (...y) =>
+  (...y) => 
   (...z) =>
     [...x, ...y, ...z].reduce((x, y) => x + y);
 console.log('count', count2(1)(2, 2)(2));
