@@ -16,6 +16,7 @@ function createPromiseArr() {
   }
   return proArr;
 }
+
 /**
  *  并发请求
  * @param {[]} promiseArr    Promise 数组
@@ -28,6 +29,7 @@ async function conCurrentRequest(promiseArr, maxNum) {
     let curIndex = 0;
     let successCount = 0;
     let allData = [];
+
     async function run() {
       let i = curIndex;
       try {
@@ -45,9 +47,11 @@ async function conCurrentRequest(promiseArr, maxNum) {
         }
       }
     }
+
     for (let j = 0; j < maxNum; j++) {
       run();
     }
+
   });
 }
 conCurrentRequest(createPromiseArr(), 3);

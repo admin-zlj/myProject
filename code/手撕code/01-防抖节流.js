@@ -19,6 +19,7 @@ function debounce(cb, delay) {
     }, delay);
   };
 }
+
 function throttle(cb, delay) {
   let flag = false;
   return function (...args) {
