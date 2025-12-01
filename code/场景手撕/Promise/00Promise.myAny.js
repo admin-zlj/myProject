@@ -7,7 +7,7 @@ const createPromise = (time, isErr) => {
 };
 
 /**
- *
+ * 返回第一个成功的值，所有都失败就返回失败的数组
  * @param {[]} promiseArr
  */
 Promise.myAny = function (promiseArr) {

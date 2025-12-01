@@ -7,7 +7,8 @@ const createPromise = (time, isErr) => {
 };
 
 /**
- *
+ * all 返回所有成功的结果，当有一个失败的就返回那个失败的
+ * allSettled 返回所有的结果数组，不管成功还是失败
  * @param {[]} promiseArr
  */
 Promise.myall = function (promiseArr) {

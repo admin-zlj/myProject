@@ -7,7 +7,7 @@ const createPromise = (time, isErr) => {
 };
 
 /**
- *
+ * 返回第一个结果，不管成功还是失败
  * @param {[]} promiseArr
  */
 Promise.myRace = function (promiseArr) {

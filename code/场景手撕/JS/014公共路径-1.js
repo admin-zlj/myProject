@@ -18,3 +18,19 @@ function findDir(dirs) {
 }
 
 console.log('====', findDir(['/usr/config/bin', '/usr/config', '/usr/config/qq']));
+
+// function findDir2(dirs) {
+//   let res = '';
+//   len = Math.min(...dirs.map((item) => item.length));
+//   const firstV = dirs[0];
+
+//   for (let i = 0; i < len; i++) {
+//     if (dirs.every((item) => item[i] === firstV[i])) {
+//       res = res + firstV[i];
+//     } else {
+//       break;
+//     }
+//   }
+//   return res;
+// }
+// console.log('====', findDir(['/usr/config/bin', '/usr/config', '/usr/config/qq']));
